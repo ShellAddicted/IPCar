@@ -1,0 +1,9 @@
+[submodule "components/BNO055ESP32"]
+	path = components/BNO055ESP32
+	url = https://github.com/ShellAddicted/BNO055ESP32
+[submodule "components/AFMSv2ESP32"]
+	path = components/AFMSv2ESP32
+	url = https://github.com/ShellAddicted/AFMSv2ESP32
+[submodule "components/ESP32Servo"]
+	path = components/ESP32Servo
+	url = https://github.com/ShellAddicted/ESP32Servo

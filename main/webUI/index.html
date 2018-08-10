@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>IPCar Controls</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<script src="Chart.min.js"></script>
+		<link rel="stylesheet" href="stylesheet.min.css">
+	</head>
+
+	<body class="noselect">
+		<div id="settingDiv" style="display: none;">
+			<input class="intvalue" id="speedValue" type="number" placeholder="Speed" max="100" min="0"/>
+			<input type="button" id="updateSpeedBtn" value="updateSpeed" />
+			<br /><br />
+		</div>
+		<div id="mainContainer">
+			<div id="telemetryArea">
+
+				<div id="chartAContainer">
+						<canvas id="chartA"></canvas>
+				</div>
+
+				<div class="row">
+					<div class="dataBox">
+							<div class="dataBoxContainer">
+								<span class="dataBoxName">Link:</span><br />
+								<div class="dataBoxValue">
+									<span id="linkState"></span>
+								</div>
+							</div>
+						</div>
+					<div class="dataBox">
+						<div class="dataBoxContainer">
+							<span class="dataBoxName">Gear:</span><br />
+							<div class="dataBoxValue">
+								<span id="carGear"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dataBox">
+						<div class="dataBoxContainer">
+							<span class="dataBoxName">RPM:</span><br />
+							<div class="dataBoxValue">
+								<span id="carRPM"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dataBox">
+						<div class="dataBoxContainer">
+							<span class="dataBoxName">Speed: (km/h)</span><br />
+							<div class="dataBoxValue">
+								<span id="carSpeed"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dataBox">
+						<div class="dataBoxContainer">
+							<span class="dataBoxName">Throttle: (%)</span><br />
+							<div class="dataBoxValue">
+								<span id="carThrottle"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dataBox">
+						<div class="dataBoxContainer">
+							<span class="dataBoxName">Steering Angle: (%)</span><br />
+							<div class="dataBoxValue">
+								<span id="carSteeringPercentage"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dataBox">
+						<div class="dataBoxContainer">
+							<span class="dataBoxName">uptime</span><br />
+							<div class="dataBoxValue">
+								<span id="carUptime"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dataBox">
+						<div class="dataBoxContainer">
+							<span class="dataBoxName">Battery (V)</span><br />
+							<div class="dataBoxValue">
+								<span id="batteryVoltage"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dataBox">
+						<div class="dataBoxContainer">
+							<span class="dataBoxName">Battery (%)</span><br />
+							<div class="dataBoxValue">
+								<span id="batteryPercentage"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="core.min.js"></script>
+	</body>
+</html>

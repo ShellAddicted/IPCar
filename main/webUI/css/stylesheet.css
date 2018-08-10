@@ -1,0 +1,58 @@
+body{
+    background:#212121;
+    color: white;
+}
+
+.noselect {
+    -webkit-touch-callout: unset; /* iOS Safari */
+    -webkit-user-select: unset; /* Safari */
+    -khtml-user-select: unset; /* Konqueror HTML */
+    -moz-user-select: unset; /* Firefox */
+    -ms-user-select: unset; /* Internet Explorer/Edge */
+    user-select: unset; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.dataBoxContainer{
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+.dataBoxContainer .dataBoxValue{
+    font-weight: bold;
+    font-size: 150%;
+}
+#telemetryArea .row *{
+    display: inline-block;
+}
+
+#mainContainer{
+    width: 100%;
+    overflow: auto;
+}
+
+#telemetryArea{
+    float: left;
+    overflow: auto;
+    width: 50%;
+}
+
+#videoArea{
+    float: right;
+    width: 50%;
+}
+
+#chartAContainer{
+    width: 85%;
+    margin: 1%;
+}
+#videoContainer{
+    margin: 1%;
+    height: 50%;
+    background: black;
+    text-align: center;
+}
+.videoMessage{
+    position: relative;
+    top: 50%;
+}

@@ -1,0 +1,9 @@
+# ESP-IDF
+build/
+sdkconfig.old
+
+#IDE
+.vscode
+
+#Project (avoid version control of passwords)
+keys.h
