@@ -77,12 +77,12 @@ MyVehicle::MyVehicle(){
 void MyVehicle::run(direction_t direction, unsigned int throttle, float steering){
 	VehicleAPI::run(direction,throttle,steering);
 	//Steering
-	float servoAngle = 52; // Servo Angle: Center
+	float servoAngle = 100; // Servo Angle: Center
 	if (steering > 0){ // left
-		servoAngle += getValueByPercentage(steering, 18, true); 
+		servoAngle += getValueByPercentage(steering, 15, true); 
 	}
 	else if (steering < 0){ // right
-		servoAngle += getValueByPercentage(steering, 23, true); // 23 instead of 20 due to compensation.
+		servoAngle += getValueByPercentage(steering, 19, true); // 23 instead of 20 due to compensation.
 	}
 	steeringEngine.write((int)servoAngle);
 	
