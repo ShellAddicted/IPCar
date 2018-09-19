@@ -33,9 +33,9 @@ MyVehicle* car;
 
 void setupWiFiAP(const char* ssid, const char* password){
 	wifi_config_t ap_config;
-	std::memset(&ap_config, 0, sizeof(ap_config));
-	std::memcpy(ap_config.ap.ssid, ssid, strlen(ssid));
-	std::memcpy(ap_config.ap.password, password, strlen(password));
+	memset(&ap_config, 0, sizeof(ap_config));
+	memcpy(ap_config.ap.ssid, ssid, strlen(ssid));
+	memcpy(ap_config.ap.password, password, strlen(password));
 	ap_config.ap.channel = 0;
 	ap_config.ap.authmode = WIFI_AUTH_WPA2_PSK;
 	ap_config.ap.ssid_hidden = 0;
