@@ -82,7 +82,7 @@ void MyVehicle::run(direction_t direction, unsigned int throttle, float steering
 		servoAngle += getValueByPercentage(steering, 15, true); 
 	}
 	else if (steering < 0){ // right
-		servoAngle += getValueByPercentage(steering, 19, true); // 23 instead of 20 due to compensation.
+		servoAngle += getValueByPercentage(steering, 35, true); // 23 instead of 20 due to compensation.
 	}
 	steeringEngine.write((int)servoAngle);
 	
