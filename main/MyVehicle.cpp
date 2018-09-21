@@ -70,7 +70,7 @@ void MyVehicle::setupAFMS() {
     if (err == ESP_OK) {
         xEventGroupClearBits(errorFlags, BIT_ERR_I2C_INSTALL);
         afms = Adafruit_MotorShield(0x60, I2C_NUM_0);
-        engine = afms.getMotor(2);
+        engine = afms.getMotor(3);
         try {
             afms.begin();
             xEventGroupClearBits(errorFlags, BIT_ERR_AFMS_INIT_FAIL);
