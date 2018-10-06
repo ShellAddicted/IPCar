@@ -1,0 +1,5 @@
+set(COMPONENT_ADD_INCLUDEDIRS ".")
+set(COMPONENT_SRCDIRS ".")
+set(COMPONENT_EMBED_TXTFILES webUI/index.min.html webUI/css/stylesheet.min.css webUI/js/ChartJS/Chart.min.js webUI/js/core.min.js)
+register_component()
+component_compile_options(-D_GLIBCXX_USE_C99=1)
